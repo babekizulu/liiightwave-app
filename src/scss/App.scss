@@ -1,0 +1,29 @@
+@import 'utils';
+*::before,
+*::after,
+* {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    @include wh100;
+}
+
+//main app container
+.app-container {
+    @include wh100;
+    @include grid1;
+}
+
+//components
+@import 'Header';
+@import 'ModelBox';
+@import 'Navigation';
+//mobile & tablet responsiveness 
+@import 'tablet';
+@import 'mobile';

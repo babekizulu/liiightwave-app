@@ -1,0 +1,59 @@
+@mixin centerFlex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+@mixin grid1 {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+@mixin wh100 {
+    width: 100%;
+    height: 100%;
+}
+
+@mixin header {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    z-index: 3;
+}
+
+@mixin navigation {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    z-index: 3;
+}
+
+//colors
+$liiight-orange: #FFBB38;
+$liiight-red: #FF5959;
+$liiight-blue: #8CD6FF;
+$liiight-grey: #d3d3d3;
+//transition: 
+$e: all 0.2s ease;
+$ei: all 0.2s ease-in;
+$eio: all 0.2s ease-in-out;
+//fonts
+$js: 'Josefin Sans',
+sans-serif;
+$dot: 'DotGothic16',
+sans-serif;
+$mts: 'Montserrat Subrayada',
+sans-serif;
+$ral: 'Raleway',
+sans-serif;

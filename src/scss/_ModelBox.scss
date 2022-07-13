@@ -1,0 +1,17 @@
+@import 'utils';
+.model-box-container {
+    @include wh100;
+    @include grid1;
+    background: linear-gradient(to right, #C4E0E5, #4CA1AF);
+    position: absolute;
+    z-index: 0;
+}
+
+.model-box {
+    @include centerFlex;
+    margin: auto;
+    width: 960px;
+    video {
+        max-width: 100%;
+    }
+}

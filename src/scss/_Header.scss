@@ -1,0 +1,67 @@
+@import 'utils';
+.header-container {
+    @include header;
+    background: #fff;
+    border-bottom: 1px solid $liiight-grey;
+}
+
+.logo-container {
+    @include centerFlex;
+    position: relative;
+    left: 0;
+    .logo {
+        font-family: $js;
+        font-size: 1.2rem;
+        font-weight: 700;
+        margin: 0px 10px 10px 10px;
+    }
+}
+
+#iSpans {
+    font-weight: 500;
+    &:nth-child(1) {
+        color: $liiight-orange;
+    }
+    &:nth-child(2) {
+        color: $liiight-red;
+    }
+    &:nth-child(3) {
+        color: $liiight-blue;
+    }
+}
+
+#waveSpan {
+    font-family: $dot;
+    letter-spacing: 10px;
+    font-size: 2.2rem;
+}
+
+.icon-container {
+    @include centerFlex;
+    margin: auto;
+    .circle-1 {
+        height: 30px;
+        width: 30px;
+        border-radius: 50%;
+        background: $liiight-orange;
+    }
+    .circle-2 {
+        height: 30px;
+        width: 30px;
+        border-radius: 50%;
+        background: $liiight-red;
+    }
+    .circle-3 {
+        height: 30px;
+        width: 30px;
+        border-radius: 50%;
+        background: $liiight-blue;
+    }
+}
+
+.searchbar-container {
+    @include centerFlex;
+    position: relative;
+    right: 0;
+    background: #fff;
+}
