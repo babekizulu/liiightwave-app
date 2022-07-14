@@ -13,16 +13,13 @@ class Empath {
 
     empathize() {
         const questions = Questions;
+        let qArr = [];
         const qNum = this.qNum;
-        try {
-            for (let i = 0; i < questions.length ; i++) {
-                if (i === qNum) {
-                    return questions[i].question;
-                }
-            }
-        } catch (err) {
-            console.log('Failed to empathize');
+        for (let i = 0; i < questions.length ; i++) {
+            qArr.push(questions[i].question);
         }
+
+        return qArr[qNum - 1];
     }
 }
 

@@ -1,0 +1,36 @@
+@import 'utils';
+.empath-widget {
+    @include wh100;
+    @include grid1;
+    position: absolute;
+    top: 50px;
+}
+
+.question-box {
+    @include centerFlex;
+    width: 100%;
+    padding: 0 80px;
+}
+
+.question {
+    font-family: $dot;
+}
+
+.empathize-btn-container {
+    @include centerFlex;
+}
+
+.empathize-btn {
+    background: #131313;
+    border: none;
+    padding: 8px 20px;
+    color: #fff;
+    font-family: $ral;
+    font-weight: 600;
+    cursor: pointer;
+    transition: $eio;
+    &:hover {
+        background: #383838;
+        transition: $eio;
+    }
+}

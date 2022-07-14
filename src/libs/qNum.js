@@ -1,10 +1,5 @@
 const qNum = () => {
-    try {
-        const answer = Math.floor(Math.random()) * 50;
-        return answer;
-    } catch (err) {
-        console.log('Failed to generate random qNum');
-    }
+   return Math.floor(Math.random() * 50);
 }
 
 export default qNum;

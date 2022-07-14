@@ -147,7 +147,7 @@ const Questions = [
         question:  `What books have you been reading lately? Is there a book you've been wanting to read but haven't made time? If so, find the book online and read the preview/summary of it, something that can get you excited to know more... Don't forget to make time to read it eventually`
     },
     {
-        question:  `Is there anybody you hurt that you've been afraid to reach out to and apologize to? First forgive yourself and make the changes you need to avoid making that mistake again. If possible, reach out to the person and let them know you acknowledge you messed up, and you acknowledge all the ways your mistake hurt them. Let them know you're taking the steps you need to take to do better. They may or may not forgive you, but that's not in your control, the point is that you made the effort. Now go forth and do better- I believe in you!`
+        question:  `Is there anybody you hurt that you've been afraid to reach out to and apologize to? First forgive yourself and make the changes you need to make in order to avoid making that mistake again. If possible, reach out to the person and let them know you acknowledge you messed up, and you acknowledge all the ways your mistake hurt them. Let them know you're taking the steps you need to take to do better. They may or may not forgive you, but that's not in your control, the point is that you made the effort. Now go forth and do better- I believe in you!`
     }
 ];
 
