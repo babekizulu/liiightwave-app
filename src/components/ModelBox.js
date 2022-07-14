@@ -8,7 +8,7 @@ class ModelBox extends Component {
         return (
             <div className='model-box-container'>
                 <div className="model-box">
-                    <video ref={modelRef} src={SphereCluster}></video>
+                    <video loop ref={modelRef} src={SphereCluster}></video>
                 </div>
             </div>
         );

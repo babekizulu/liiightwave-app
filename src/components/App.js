@@ -1,6 +1,5 @@
 //libraries
 import { React, Component, createRef, Fragment} from 'react';
-import ModelController from '../libs/ModelController';
 //components 
 import Header from './Header';
 import ModelBox from './ModelBox';
@@ -20,12 +19,22 @@ class App extends Component {
     }
     activateModel = () => {
         const { modelActive, soundscapePlaying, soundscape } = this.state;
-        new ModelController(modelActive, soundscapePlaying, soundscape).activateModel()
+        if (!modelActive && !soundscapePlaying) {
+            this.setState({ modelActive: true });
+            this.setState({ soundscapePlaying: true});
+            this.modelRef.current.play();
+            soundscape.play();
+        }
     }
 
     deactivateModel = () => {
         const { modelActive, soundscapePlaying, soundscape} = this.state;
-        new ModelController(modelActive, soundscapePlaying, soundscape).deactivateModel();
+        if(modelActive && soundscapePlaying) {
+            this.setState({modelActive: false});
+            this.setState({soundscapePlaying: false});
+            this.modelRef.current.pause();
+            soundscape.pause();
+        }
     }
 
     navModel = () => {

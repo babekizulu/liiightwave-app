@@ -39,6 +39,7 @@
 .icon-container {
     @include centerFlex;
     margin: auto;
+    cursor: pointer;
     .circle-1 {
         height: 30px;
         width: 30px;
