@@ -4,13 +4,20 @@ import { Favorite, Circle } from "@mui/icons-material";
 
 class Navigation extends Component {
     render() {
-        const {activateModel, deactivateModel, navEmpath, navModel} = this.props;
+        const {activateModel, deactivateModel, navEmpath, navModel, navParts} = this.props;
         return (
             <div className="navigation-container">
                 <button className='circle-btn'>
-                    <Circle className='circle'/>
+                    <Circle className='circle' onClick={() => navParts()}/>
                 </button>
-                <button className='bolt-play' onMouseDown={() => activateModel()} onMouseUp={() => deactivateModel()} onClick={() => navModel()}>
+                <button 
+                    className='bolt-play' 
+                    onMouseDown={() => activateModel()} 
+                    onMouseUp={() => deactivateModel()} 
+                    onClick={() => navModel()}
+                    onTouchStart={() => activateModel()}
+                    onTouchEnd={() => deactivateModel()}
+                >
                     <ElectricBolt className='bolt'/>
                 </button>
                 <button className='empath-btn' onClick={() => navEmpath()}>

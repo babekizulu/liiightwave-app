@@ -1,0 +1,46 @@
+@import 'utils';
+.parts-container {
+    width: 100%;
+    height: 100%;
+    @include grid1;
+    position: relative;
+    top: 50px;
+    background: linear-gradient(to right, #C4E0E5, #4CA1AF);
+}
+
+.part-box {
+    @include grid1;
+    margin: auto;
+    width: 31.25em;
+    height: 100vh;
+    position: relative;
+    bottom: 50px;
+}
+
+.part {
+    @include centerFlex;
+    max-width: 100%;
+    margin: auto;
+    z-index: 4;
+}
+
+.activate-part-btn {
+    @include centerFlex;
+    margin: auto;
+    padding: 8px 20px;
+    background: #131313;
+    color: #fff;
+    font-weight: 600;
+    border: none;
+    font-family: $ral;
+    cursor: pointer;
+    transition: $eio;
+    &:hover {
+        background: #4d4d4d;
+        transition: $eio;
+    }
+    &:active {
+        background: #4d4d4d;
+        transition: $eio;
+    }
+}

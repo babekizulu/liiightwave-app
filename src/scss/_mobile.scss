@@ -1,0 +1,27 @@
+@media screen and (max-width: 390px) {
+    .app-container {
+        width: 390px;
+        height: 844px;
+    }
+    .header-container {
+        width: 100vw;
+        height: 50px;
+    }
+    .navigation-container {
+        width: 100vw;
+        height: 50px;
+    }
+    .model-box-container {
+        width: 100vw;
+        height: 100%;
+        position: absolute;
+        top: 50px;
+        bottom: 50px;
+    }
+    .model-box {
+        width: 20em;
+    }
+    .part-box {
+        width: 20em;
+    }
+}
