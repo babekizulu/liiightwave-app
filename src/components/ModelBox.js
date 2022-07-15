@@ -1,5 +1,5 @@
 import {React, Component} from 'react';
-import SphereCluster from '../model/SphereCluster.webm';
+import AmaniMk1 from '../model/AmaniMk1.webm';
 
 class ModelBox extends Component {
     render() {
@@ -8,7 +8,7 @@ class ModelBox extends Component {
         return (
             <div className='model-box-container'>
                 <div className="model-box">
-                    <video loop ref={modelRef} src={SphereCluster}></video>
+                    <video loop ref={modelRef} src={AmaniMk1}></video>
                 </div>
             </div>
         );
