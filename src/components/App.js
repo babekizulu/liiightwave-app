@@ -17,7 +17,16 @@ class App extends Component {
     constructor(props) {
         super(props);
 
-        this.state = { modelActive: false, soundscape: new Audio(Soundscape1), soundPart1: new Audio(SoundPart1), soundPart2: new Audio(SoundPart2),  soundscapePlaying: false, activePage: 'model' };
+        this.state = { 
+            modelActive: false, 
+            soundscape: new Audio(Soundscape1), 
+            soundPart1: new Audio(SoundPart1), 
+            soundPart2: new Audio(SoundPart2),  
+            soundscapePlaying: false, 
+            activePage: 'model',
+            scrollPosition: null,
+            height: null
+        };
         this.modelRef = createRef();
         this.engineRef = createRef();
         this.crewModRef = createRef();
@@ -138,16 +147,18 @@ class App extends Component {
                 <PartsWidget 
                     engineRef={this.engineRef} 
                     crewModRef={this.crewModRef}
-                    activatePart1={this.activatePart1}
-                    activatePart2={this.activatePart2}
-                    deactivatePart1={this.deactivatePart1}
-                    deactivatePart2={this.deactivatePart2}
+                    handleScroll={this.handleScroll}
                 />
             );
         };
     };
 
+    handleScroll = e => {
+        console.log(e);
+    }
+
     render() {
+        const {scrollPosition, height} = this.state;
         return (
             <div className='app-container'>
                 <Header />
@@ -160,6 +171,14 @@ class App extends Component {
                     navModel={this.navModel} 
                     navEmpath={this.navEmpath} 
                     navParts={this.navParts}
+                    activatePart1={this.activatePart1}
+                    activatePart2={this.activatePart2}
+                    deactivatePart1={this.deactivatePart1}
+                    deactivatePart2={this.deactivatePart2}
+                    engineRef={this.engineRef}
+                    crewModRef={this.crewModRef}
+                    scrollPosition={scrollPosition}
+                    height={height}
                 />
             </div>
         );
