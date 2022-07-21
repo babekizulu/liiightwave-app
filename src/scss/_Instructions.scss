@@ -1,0 +1,43 @@
+@import 'utils';
+.instructions-container {
+    @include wh100;
+    @include grid1;
+    position: absolute;
+    top: 50px;
+    bottom: 50px;
+}
+
+.instructions-icon-container {
+    @include centerFlex;
+}
+
+.instructions-list-container {
+    @include centerFlex;
+    padding: 0 80px;
+    font-family: $dot;
+    li {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+.begin {
+    @include centerFlex;
+    font-family: $dot;
+    position: relative;
+    bottom: 50px;
+}
+
+.lightning-instruction-icon {
+    color: $liiight-orange;
+}
+
+.parts-instruction-icon {
+    color: $liiight-blue;
+}
+
+.empath-instruction-icon {
+    color: $liiight-red;
+}

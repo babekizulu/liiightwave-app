@@ -6,6 +6,7 @@ import ModelBox from './ModelBox';
 import Navigation from './Navigation'
 import EmpathWidget from './EmpathWidget';
 import PartsWidget from './PartsWidget';
+import Instructions from './Instructions';
 //style
 import '../scss/App.scss';
 //soundscapes
@@ -23,9 +24,7 @@ class App extends Component {
             soundPart1: new Audio(SoundPart1), 
             soundPart2: new Audio(SoundPart2),  
             soundscapePlaying: false, 
-            activePage: 'model',
-            scrollPosition: null,
-            height: null
+            activePage: 'instructions'
         };
         this.modelRef = createRef();
         this.engineRef = createRef();
@@ -130,6 +129,12 @@ class App extends Component {
     navigate = () => {
         const {activePage} = this.state;
 
+        if (activePage === 'instructions') {
+            return (
+                <Instructions/>
+            )
+        }
+
         if (activePage === 'model') {
             return (
                 <ModelBox modelRef={this.modelRef} />
@@ -147,7 +152,11 @@ class App extends Component {
                 <PartsWidget 
                     engineRef={this.engineRef} 
                     crewModRef={this.crewModRef}
-                    handleScroll={this.handleScroll}
+                    activatePart1={this.activatePart1}
+                    activatePart2={this.activatePart2}
+                    deactivatePart1={this.deactivatePart1}
+                    deactivatePart2={this.deactivatePart2}
+
                 />
             );
         };
@@ -171,10 +180,6 @@ class App extends Component {
                     navModel={this.navModel} 
                     navEmpath={this.navEmpath} 
                     navParts={this.navParts}
-                    activatePart1={this.activatePart1}
-                    activatePart2={this.activatePart2}
-                    deactivatePart1={this.deactivatePart1}
-                    deactivatePart2={this.deactivatePart2}
                     engineRef={this.engineRef}
                     crewModRef={this.crewModRef}
                     scrollPosition={scrollPosition}

@@ -10,11 +10,11 @@
 
 .part-box {
     @include grid1;
-    margin: auto;
+    margin: 10px auto;
     width: 31.25em;
     height: 100vh;
-    position: relative;
-    bottom: 50px;
+    // position: relative;
+    // bottom: 50px;
 }
 
 .part {
@@ -42,5 +42,27 @@
     &:active {
         background: #4d4d4d;
         transition: $eio;
+    }
+}
+
+.part-icon-btn {
+    @include centerFlex;
+    padding: 8px 8px;
+    background: none;
+    border: none;
+    position: relative;
+    bottom: 90px;
+    transition: $eio;
+    cursor: pointer;
+}
+
+.part-icon {
+    transition: $eio;
+    &:hover {
+        color: $liiight-orange;
+        transition: $eio;
+    }
+    &:active {
+        color: $liiight-orange;
     }
 }
