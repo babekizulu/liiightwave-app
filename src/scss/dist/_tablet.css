@@ -1,0 +1,65 @@
+@media screen and (max-width: 912px) {
+  .app-container {
+    width: 912px;
+    height: 1368px;
+  }
+
+  .model-box {
+    width: 40em;
+  }
+
+  .part-box {
+    width: 40em;
+  }
+}
+@media screen and (max-width: 820px) {
+  .app-container {
+    width: 820px;
+    height: 1180px;
+  }
+
+  .instructions-list-container {
+    font-size: 1.2rem;
+  }
+
+  .begin {
+    font-weight: 600;
+    font-size: 1.4rem;
+  }
+
+  .model-box {
+    width: 37em;
+  }
+
+  .part-box {
+    width: 37em;
+  }
+}
+@media screen and (max-width: 768px) {
+  .app-container {
+    width: 768px;
+    height: 1024px;
+  }
+
+  .model-box {
+    width: 35em;
+  }
+
+  .part-box {
+    width: 35em;
+  }
+}
+@media screen and (max-width: 540px) {
+  .app-container {
+    width: 540px;
+    height: 720px;
+  }
+
+  .model-box {
+    width: 22em;
+  }
+
+  .part-box {
+    width: 22em;
+  }
+}

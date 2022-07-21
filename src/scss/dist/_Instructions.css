@@ -1,0 +1,55 @@
+.instructions-container {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  position: absolute;
+  top: 50px;
+  bottom: 50px;
+}
+
+.instructions-icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: auto;
+}
+
+.instructions-list-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 80px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+}
+.instructions-list-container li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.begin {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+  position: relative;
+  bottom: 50px;
+}
+
+.lightning-instruction-icon {
+  color: #ffbb38;
+}
+
+.parts-instruction-icon {
+  color: #8CD6FF;
+}
+
+.empath-instruction-icon {
+  color: #FF5959;
+}

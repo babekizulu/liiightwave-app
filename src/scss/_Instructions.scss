@@ -9,12 +9,14 @@
 
 .instructions-icon-container {
     @include centerFlex;
+    margin: auto;
 }
 
 .instructions-list-container {
     @include centerFlex;
     padding: 0 80px;
-    font-family: $dot;
+    font-family: $ral;
+    font-weight: 600;
     li {
         display: flex;
         justify-content: center;
@@ -25,7 +27,7 @@
 
 .begin {
     @include centerFlex;
-    font-family: $dot;
+    font-family: $ral;
     position: relative;
     bottom: 50px;
 }

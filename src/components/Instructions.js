@@ -14,15 +14,15 @@ class Instructions extends Component {
                 <div className="instructions-list-container">
                     <ul>
                         <li>
-                            The <ElectricBolt className='lightning-instruction-icon'/> icon navigates you to the main 3D model viewer. You can click and hold this icon to play the 3D model and it's associated audio
+                            <ElectricBolt className='lightning-instruction-icon'/> - liiightwave viewer. Click and hold to play the liiightwave
                         </li>
                         <br/>
                         <li>
-                            The <Build className='parts-instruction-icon'/> icon navigates you to the Parts viewer. Each Part has a <Build className='parts-instruction-icon'/> icon underneath it. Click and hold this icon to play a Part.
+                            <Build className='parts-instruction-icon'/> - liiightwave parts viewer. Click and hold this icon to play a liiightwave part
                         </li>
                         <br/>
                         <li>
-                            The <Favorite className='empath-instruction-icon'/> icon navigates you to Empath. Click  <button className='empathize-btn'>Next Question</button>  to generate a new Empath question.
+                            <Favorite className='empath-instruction-icon'/> - empath widget. Click 'Next Question' to generate a new empath question.
                         </li>
                     </ul>
                 </div>

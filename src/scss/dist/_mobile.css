@@ -1,0 +1,208 @@
+@media screen and (max-width: 414px) {
+  .app-container {
+    width: 414px;
+    height: 896px;
+  }
+
+  .header-container {
+    width: 100vw;
+    height: 50px;
+  }
+
+  .navigation-container {
+    width: 100vw;
+    height: 50px;
+  }
+
+  .model-box-container {
+    width: 100vw;
+    height: 100%;
+    position: absolute;
+    top: 50px;
+    bottom: 50px;
+  }
+
+  .instructions-container {
+    width: 100%;
+    height: 100%;
+  }
+
+  .instructions-list-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: left;
+    margin: 10px;
+    width: 20em;
+    font-size: 1.2rem;
+  }
+
+  .model-box {
+    width: 20em;
+  }
+
+  .part-box {
+    width: 20em;
+  }
+
+  .question {
+    font-size: 1.2rem;
+  }
+
+  .empathize-btn {
+    font-size: 1.4rem;
+  }
+}
+@media screen and (max-width: 412px) {
+  .app-container {
+    width: 412px;
+    height: 915px;
+  }
+
+  .header-container {
+    width: 100vw;
+    height: 50px;
+  }
+
+  .navigation-container {
+    width: 100vw;
+    height: 50px;
+  }
+
+  .model-box-container {
+    width: 100vw;
+    height: 100%;
+    position: absolute;
+    top: 50px;
+    bottom: 50px;
+  }
+
+  .model-box {
+    width: 20em;
+  }
+
+  .part-box {
+    width: 20em;
+  }
+
+  .question {
+    font-size: 1.2rem;
+  }
+
+  .empathize-btn {
+    font-size: 1.4rem;
+  }
+}
+@media screen and (max-width: 390px) {
+  .app-container {
+    width: 390px;
+    height: 844px;
+  }
+
+  .header-container {
+    width: 100vw;
+    height: 50px;
+  }
+
+  .navigation-container {
+    width: 100vw;
+    height: 50px;
+  }
+
+  .model-box-container {
+    width: 100vw;
+    height: 100%;
+    position: absolute;
+    top: 50px;
+    bottom: 50px;
+  }
+
+  .model-box {
+    width: 20em;
+  }
+
+  .part-box {
+    width: 20em;
+  }
+}
+@media screen and (max-height: 667px) {
+  .question-box {
+    padding: 0 40px;
+  }
+
+  .question {
+    font-size: 0.9rem;
+  }
+}
+@media screen and (max-width: 375px) {
+  .app-container {
+    width: 375px;
+    height: 667px;
+  }
+
+  .model-box {
+    width: 15em;
+  }
+
+  .part-box {
+    width: 15em;
+  }
+
+  .question {
+    font-family: sans-serif;
+    line-height: 20px;
+  }
+
+  .instructions-list-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+    padding: 0 10px;
+    width: 15em;
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 360px) {
+  .app-container {
+    width: 360px;
+    height: 740px;
+  }
+
+  .model-box {
+    width: 15em;
+  }
+
+  .part-box {
+    width: 15em;
+  }
+
+  .question {
+    font-family: sans-serif;
+    line-height: 20px;
+  }
+}
+@media screen and (max-width: 280px) {
+  .app-container {
+    width: 280px;
+    height: 653px;
+  }
+
+  .model-box {
+    width: 10em;
+  }
+
+  .part-box {
+    width: 10em;
+  }
+
+  .question {
+    font-family: sans-serif;
+    line-height: 20px;
+  }
+
+  .begin {
+    font-size: 0.7rem;
+  }
+}
