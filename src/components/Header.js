@@ -7,7 +7,7 @@ class Header extends Component {
         return (
             <div className='header-container'>
                 <div className="icon-container" onClick={() => {
-                    window.location.href = 'http://localhost:3000/'
+                    window.location.href = 'https://www.liiightwave.com/'
                 }}>
                         <span className='circle-1'></span>
                         <span className='circle-2'></span>
